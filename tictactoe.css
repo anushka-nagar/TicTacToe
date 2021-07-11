@@ -1,0 +1,54 @@
+body{
+    background-color: beige !important;
+}
+.container{
+    background-color: beige;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2% 5% 2% 5%;
+}
+
+.heading{
+    text-align: center;
+    color: brown;
+}
+
+.heading h1{
+    padding-top: 2rem;
+}
+
+.play-board{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom:  2%;
+}
+
+.play-board section span{
+    text-align: center;
+    padding: 2rem;
+    height: 10rem; 
+    font-size: 4rem;
+    font-weight:300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    background-color: beige;
+    border-right: 3px solid brown;
+    border-bottom: 3px solid brown;
+}
+
+#box3, #box6, #box9{
+    border-right: none;
+}
+
+#box7, #box8, #box9{
+    border-bottom: none;
+}
+
+.play-board section span:hover{
+    cursor: pointer;
+    background-color: azure;
+    transition: 1s ease;
+}
+ 

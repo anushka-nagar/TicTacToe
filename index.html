@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>TIC-TAC-TOE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale = 1">
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>TIC-TAC-TOE</h1>
+        </div>
+        <div class="play-board">
+            <section class="row">
+                <span class="col-sm-4" id="box1" onclick="play(this);"></span>
+                <span class="col-sm-4" id="box2" onclick="play(this);"></span>
+                <span class="col-sm-4" id="box3" onclick="play(this);"></span>
+            </section>
+            <section class="row">
+                <span class="col-sm-4" id="box4" onclick="play(this);"></span>
+                <span class="col-sm-4" id="box5" onclick="play(this);"></span>
+                <span class="col-sm-4" id="box6" onclick="play(this);"></span>
+            </section>
+            <section class="row">
+                <span class="col-sm-4" id="box7" onclick="play(this);"></span>
+                <span class="col-sm-4" id="box8" onclick="play(this);"></span>
+                <span class="col-sm-4" id="box9" onclick="play(this);"></span>
+            </section>
+        </div>
+
+
+        <div class="modal fade" id="result" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Game Over</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center" id="winner"></h3>
+                    <button type="button" class="btn btn-primary m-2" id="reset" onclick="reset();">Reset</button>
+                    <button type="button" class="btn btn-danger m-2" id="reset" onclick="end();">End</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    </div>
+
+</body>
